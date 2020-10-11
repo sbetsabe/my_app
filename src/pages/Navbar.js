@@ -24,17 +24,17 @@ class Navbar extends React.Component {
                     Modulos de Usuarios
                   </a>
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">Nuevo Usuario</a>
-                    <a className="dropdown-item" href="/modulos">Modificar Usuario</a>
-                    <a className="dropdown-item" href="#">Consultar Usuario</a>
-                    <a className="dropdown-item" href="#">Eliminar Usuario</a>
+                    <a className="dropdown-item" href="/newuser">Nuevo Usuario</a>
+                    <a className="dropdown-item" href="/modifyuser">Modificar Usuario</a>
+                    <a className="dropdown-item" href="/consultuser">Consultar Usuario</a>
+                    <a className="dropdown-item" href="/deleteuser">Eliminar Usuario</a>
                   </div>
                 </li>
               </ul>
             </div>
             <form>
               <input type="text" value="Buscar" />
-              <button type="submit" className="btn btn-light"> Buscar</button>
+              <button type="submit" class="btn btn-primary btn-sm"> Buscar</button>
             </form>
           </nav>
         )
