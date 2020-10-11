@@ -32,6 +32,10 @@ class Navbar extends React.Component {
                 </li>
               </ul>
             </div>
+            <form>
+              <input type="text" value="Buscar" />
+              <button type="submit" className="btn btn-light"> Buscar</button>
+            </form>
           </nav>
         )
     }
