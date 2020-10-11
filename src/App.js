@@ -1,16 +1,23 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import Route from 'react-router-dom/Route';
+import Agregar from './pages/agregar';
+import Home from './pages/home';
+import { BrowserRouter } from 'react-router-dom';
+import Nav from "./pages/Navbar";
 
-import Menu from './components/Menu.js';
-
-function App() {
+class App extends Component {
+  render() {
     return (
-      <div className = "App" >
-        <header className = "App-header" >
-          <Menu/>
-        </header>
+      <div>
+        <BrowserRouter>
+          <div>
+            <Nav />
+            <Route exact path="/" component={Home} />
+            <Route path="/agregar" component={Agregar} />
+          </div>
+        </BrowserRouter>
       </div>
     );
+  }
 }
-
 export default App;
