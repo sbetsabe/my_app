@@ -7,7 +7,9 @@ class Footer extends React.Component {
   }
   render() {
     return(
-      <div className="container bg-dark text-light">Footer</div>
+      <div className="container bg-dark text-light">
+        Footer
+      </div>
     )
   }
 }

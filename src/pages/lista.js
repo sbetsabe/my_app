@@ -1,6 +1,6 @@
 import React from 'react';
 export default () => (
     <div>
-        Agregar
+        Lista de usuarios
     </div>
 );
