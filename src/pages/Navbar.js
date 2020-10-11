@@ -7,25 +7,18 @@ class Navbar extends React.Component {
     }
     render() {
         return (
-          <nav className="navbar navbar-inverse bg-dark" >
-                <div className="container-fluid">
-                    <div className="navbar-header">
-                        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span className="sr-only">Toggle navigation</span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                        </button>
-                        <a className="navbar-brand" href="/">Al trote</a>
-                    </div>
-                    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul className="nav navbar-nav navbar-right">
-                           <li className={this.getNavLinkClass("/")}><NavLink to="/" >Listar</NavLink></li>
-                           <li className={this.getNavLinkClass("/agregar")}><NavLink to="/agregar">Agregar</NavLink></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+          <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a className="navbar-brand" href="#">Inicio</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul className="navbar-nav">
+                <li className={this.getNavLinkClass("/")}><NavLink to="/" >Listar</NavLink></li>
+                <li className={this.getNavLinkClass("/agregar")}><NavLink to="/agregar">Agregar</NavLink></li>
+              </ul>
+            </div>
+          </nav>
         )
     }
 };
