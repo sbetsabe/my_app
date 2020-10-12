@@ -1,10 +1,11 @@
-import React from 'react';
+import React from 'react'
+import { datos } from './lista.json' // O el nombre de tu archivo
 
 export default () => (
-
   <div className="container p-3 my-3 border">
-    <h2>Lista de Usuarios</h2>
-
+    <div className="container-fluid">
+      <h3>Lista de Usuarios registrados</h3>
+    </div>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -14,26 +15,17 @@ export default () => (
           <th>Email</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td>Nombre</td>
-          <td>Apellidos</td>
-          <td>Email</td>
-        </tr>
-        <tr>
-          <td>115650890</td>
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-        </tr>
-        <tr>
-          <td>607890343</td>
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
-        </tr>
-      </tbody>
+      {datos.map(({nombre, apellidos, email, cedula}) =>(
+        <tbody>
+          <tr>
+            <td key={cedula}>{cedula}</td>
+            <td key={cedula}>{nombre}</td>
+            <td key={cedula}>{apellidos}</td>
+            <td key={cedula}>{email}</td>
+          </tr>
+        </tbody>
+      ))}
     </table>
   </div>
+
 );

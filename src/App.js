@@ -8,7 +8,6 @@ import NewUser from './pages/newuser';
 import Home from './pages/home';
 import { BrowserRouter } from 'react-router-dom';
 import Nav from "./pages/Navbar";
-import Footer from "./pages/Footer";
 
 class App extends Component {
   render() {
@@ -23,7 +22,6 @@ class App extends Component {
             <Route path="/newuser" component={NewUser} />
             <Route path="/deleteuser" component={EliminarUsuario} />
             <Route path="/consultuser" component={ConsultarUsuario} />
-            <Footer />
           </div>
         </BrowserRouter>
       </div>

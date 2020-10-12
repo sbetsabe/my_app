@@ -1,0 +1,16 @@
+{
+  "datos": [
+    {
+      "cedula": 1,
+      "nombre": "Maria Jose",
+      "apellidos": "Lopez Moncada",
+      "email": "marijo.se@gmail.com"
+    },
+    {
+      "cedula": 2,
+      "nombre": "Hector",
+      "apellidos": "Martinez Sequeira",
+      "email": "hector.martinez@outlook.es"
+    }
+  ]
+}
