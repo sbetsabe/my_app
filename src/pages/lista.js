@@ -4,7 +4,7 @@ import { datos } from './lista.json' // O el nombre de tu archivo
 export default () => (
   <div className="container p-3 my-3 border">
     <div className="container-fluid">
-      <h3>Lista de Usuarios registrados</h3>
+      <h3>Lista de usuarios registrados</h3>
     </div>
     <table class="table table-bordered">
       <thead>

@@ -1,16 +1,34 @@
 {
   "datos": [
     {
-      "cedula": 1,
+      "cedula": 504780663,
       "nombre": "Maria Jose",
       "apellidos": "Lopez Moncada",
       "email": "marijo.se@gmail.com"
     },
     {
-      "cedula": 2,
+      "cedula": 304670365,
       "nombre": "Hector",
       "apellidos": "Martinez Sequeira",
       "email": "hector.martinez@outlook.es"
+    },
+    {
+      "cedula": 204560321,
+      "nombre": "Oscar",
+      "apellidos": "Cespedes Castillo",
+      "email": "cespedes.ca@outlook.com"
+    },
+    {
+      "cedula": 102780256,
+      "nombre": "Ana Luisa",
+      "apellidos": "Mora Torres",
+      "email": "torres.analu@gmail.com"
+    },
+    {
+      "cedula": 50567021,
+      "nombre": "Lucas",
+      "apellidos": "Fernandez Obando",
+      "email": "o.bando@gmail.com"
     }
   ]
 }
