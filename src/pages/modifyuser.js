@@ -1,25 +1,54 @@
-import React from 'react';
-export default () => (
-    <div className="container">
-      <h2>Modificar usuario</h2>
-      <form className="was-validated">
-        <div className="form-group">
-          <label>Cedula:</label>
-          <input type="text" className="form-control" placeholder="Escriba su cedula" required/>
+import React, {Fragment, useState} from 'react';
+
+export default() => {
+
+  const [datos, setDatos] = useState({
+    nombre: '',
+    apellidos: ''
+  })
+
+  const handleInputChange = (event) => {
+      //console.log(event.target.value)
+      setDatos({
+        ...datos,
+        [event.target.name] : event.target.value
+      })
+  }
+
+  const enviarDatos = (event) => {
+      event.preventDefault();
+      console.log(datos.nombre + ' ' + datos.apellidos)
+  }
+
+  return(
+    <Fragment>
+      <h1>Modificar usuario</h1>
+      <form className="row" onSubmit={enviarDatos}>
+        <div className="col-md-3">
+          <input
+            placeholder="Ingrese nombre"
+            className="form-control"
+            type="text"
+            name="nombre"
+            onChange={handleInputChange}
+          ></input>
         </div>
-        <div className="form-group">
-          <label>Nombre:</label>
-          <input type="text" className="form-control" placeholder="Escriba su nombre" required/>
+        <div className="col-md-3">
+          <input
+            placeholder="Ingrese apellidos"
+            className="form-control"
+            type="text"
+            name="apellidos"
+            onChange={handleInputChange}
+          ></input>
         </div>
-        <div className="form-group">
-          <label>Apellidos:</label>
-          <input type="text" className="form-control" placeholder="Escriba sus apellidos" required/>
+        <div className="col-md-3">
+          <button
+            className="btn btn-dark"
+            type="submit"
+          >Enviar</button>
         </div>
-        <div className="form-group">
-          <label>Correo electronico:</label>
-          <input type="email" className="form-control" placeholder="Escriba su correo electronico" required/>
-        </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
       </form>
-    </div>
-);
+    </Fragment>
+  )
+};

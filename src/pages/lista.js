@@ -1,7 +1,7 @@
 import React from 'react';
 export default () => (
 
-  <div class="container">
+  <div className="container p-3 my-3 border">
     <h2>Lista de Usuarios</h2>
 
     <table class="table table-bordered">

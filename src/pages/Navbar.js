@@ -33,8 +33,8 @@ class Navbar extends React.Component {
               </ul>
             </div>
             <form>
-              <input type="text" value="Buscar" />
-              <button type="submit" class="btn btn-primary btn-sm"> Buscar</button>
+              <input type="text" className="form-control-inline mr-3" placeholder="Buscar"/>
+              <button type="button" class="btn btn-outline-secondary">Buscar</button>
             </form>
           </nav>
         )
