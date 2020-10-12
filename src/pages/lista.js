@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default () => (
 
   <div className="container p-3 my-3 border">
@@ -15,10 +16,10 @@ export default () => (
       </thead>
       <tbody>
         <tr>
-          <td>507890345</td>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
+          <td></td>
+          <td>Nombre</td>
+          <td>Apellidos</td>
+          <td>Email</td>
         </tr>
         <tr>
           <td>115650890</td>
