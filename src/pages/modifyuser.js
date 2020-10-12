@@ -71,27 +71,6 @@ export default() => {
           </div>
         </form>
       </div>
-      <div className="container p-3 my-3 border">
-        <h2>Lista de Usuarios</h2>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Cedula</th>
-              <th>Nombre</th>
-              <th>Apellidos</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{datos.cedula}</td>
-              <td>{datos.nombre}</td>
-              <td>{datos.apellidos}</td>
-              <td>{datos.email}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </Fragment>
   )
 };
