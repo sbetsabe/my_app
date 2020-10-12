@@ -4,7 +4,7 @@ import { datos } from './lista.json' // O el nombre de tu archivo
 export default() => {
 
   const [usuario, setUsuario] = useState({
-    cedula: ''
+    id: ''
   })
 
   const handleInputChange = (event) => {
@@ -17,7 +17,7 @@ export default() => {
 
   const enviarUsuario = (event) => {
       event.preventDefault();
-      console.log(usuario.cedula)
+      console.log(usuario.id)
   }
 
   return(
@@ -30,7 +30,7 @@ export default() => {
               placeholder="Ingrese cedula"
               className="form-control"
               type="text"
-              name="cedula"
+              name="id"
               onChange={handleInputChange}
             ></input>
           </div>
@@ -56,10 +56,10 @@ export default() => {
           {datos.map(({nombre, apellidos, email, cedula}) =>(
             <tbody>
               <tr>
-                <td key={cedula}>{cedula}</td>
-                <td key={cedula}>{nombre}</td>
-                <td key={cedula}>{apellidos}</td>
-                <td key={cedula}>{email}</td>
+                <td key={cedula.id}>{cedula}</td>
+                <td key={cedula.id}>{nombre}</td>
+                <td key={cedula.id}>{apellidos}</td>
+                <td key={cedula.id}>{email}</td>
               </tr>
             </tbody>
           ))}
